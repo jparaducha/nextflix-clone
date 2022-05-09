@@ -34,7 +34,7 @@ const Home = ({
   return (
     <div className="relative h-[150vh] bg-gradient-to-b">
       <Head>
-        <title>Create Next App</title>
+        <title>Nextflix - Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
