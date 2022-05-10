@@ -33,14 +33,14 @@ export default function Banner({ netflixOriginals }: Props) {
     <div className="flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end">
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
             
-            <img src={imgUrl}
+            {/* <img src={imgUrl}
             className="object-cover"
-            />
-            {/* <Image src={imgUrl}
+            /> */}
+            <Image src={imgUrl}
             layout="fill"
             // className="w-screen h-[800px] z-20"
             className="object-cover"
-            /> */}
+            />
 
             
           {/* <Image src={"https://image.tmdb.org/t/p/original/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg"}
