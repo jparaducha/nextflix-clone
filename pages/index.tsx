@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import { Movie } from '../typings'
 import requests from '../utils/requests'
 import Row from '../components/Row'
+import useAuth from '../hooks/useAuth'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -31,6 +32,11 @@ const Home = ({
   trendingNow,
   // products,
 }: Props) => {
+  const { loading } = useAuth();
+
+
+  if(loading) return null;
+  
   return (
     <div className="relative h-[150vh] bg-gradient-to-b">
       <Head>
