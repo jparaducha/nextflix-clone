@@ -21,7 +21,7 @@ function Thumbnail({ movie}: Props) {
       setCurrentMovie(movie);
       setShowModal(true);
     }}
-     className="relative h-28 min-w-[180px] transition duration-200 md:h-36 md:min-w-[260px] md:hover-scale-105">
+     className="cursor-pointer relative h-28 min-w-[180px] transition duration-200 md:h-36 md:min-w-[260px] md:hover-scale-105">
         <Image
         src={baseImgUrl + movie.backdrop_path || movie.poster_path}
         layout="fill"
